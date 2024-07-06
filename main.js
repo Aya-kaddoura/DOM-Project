@@ -13,7 +13,7 @@ for(let i=0 ; i < 4 ; i++){
     menuItems[i].style.cssText = "display : inline; margin : 5px";
 }
 myHeader.style.cssText="background-color : #fff ; color : #6b828f ;display : flex ;justify-content: space-between; " ;
-myLogo.style.cssText = "display: inline-block;margin-left: 10px;color: #00ff40"
+myLogo.style.cssText = "display: inline-block;margin-left: 10px;color: #008040"
 myMenu.style.cssText = "display: inline-block;margin:auto 10px"
 
 document.body.style.fontFamily = '"Poppins", Arial, sans-serif';
@@ -41,9 +41,18 @@ for(let i = 0 ; i < 15 ; i++){
     myproduct.appendChild(textNode);
 
     mySpan.style.cssText = "display : block ; margin-bottom : 10px ; margin-top : 10px ; font-Size : 40px ; color : #000";
-    contentItems[i].style.cssText = "width : 27% ; background-color : #fff;text-align : center;padding : 20px ; color: #2bff60";
+    contentItems[i].style.cssText = "width : 27% ; background-color : #fff;text-align : center;padding : 20px ; color: #008040";
 }
 
 myContent.style.cssText = "display : flex ; flex-wrap : wrap; justify-content : center; gap : 20px; box-size : border-box ; margin-top : 20px ; margin-bottom : 20px"
 
 document.body.appendChild(myContent);
+
+//Footer
+let myFooter = document.createElement("footer");
+myFooter.className = "footer";
+let textFooter = document.createTextNode("Copyright 2021");
+myFooter.appendChild(textFooter);
+myFooter.style.cssText = "background-color : #008040 ; color : #fff ; text-align : center ; font-size : 26px ; padding : 20px";
+
+document.body.appendChild(myFooter);
